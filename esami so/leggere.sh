@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec {FD}</usr/include/stdio.h
+exec {FD}<$1
 #usa un file descriptor per aprire in lettura il file
 if (($? == 0)); then 
 #controlla se il file descriptor apre corretttamente il file
